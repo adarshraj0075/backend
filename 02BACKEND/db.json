@@ -1,0 +1,70 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "Intro to backend",
+      "instructor": "adarsh",
+      "duration": "10"
+    },
+    {
+      "id": "2",
+      "title": "intro to express",
+      "instructor": "bob",
+      "duration": "7"
+    },
+    {
+      "id": "4",
+      "title": "Intro to redux",
+      "instructor": "virat",
+      "duration": "7"
+    },
+    {
+      "id": "5",
+      "title": "Intro to backend",
+      "instructor": "himanshu",
+      "duration": "30"
+    },
+    {
+      "id": "6",
+      "title": "Intro to frontend",
+      "instructor": "ron",
+      "duration": "30"
+    },
+    {
+      "id": "7",
+      "title": "Intro to react",
+      "instructor": "harry",
+      "duration": "30"
+    },
+    {
+      "title": "Intro to sequalize",
+      "instructor": "wisley",
+      "duration": "29",
+      "id": "8"
+    },
+    {
+      "title": "Intro to llm",
+      "instructor": "jetray",
+      "duration": "2",
+      "id": "9"
+    },
+    {
+      "title": "Intro to machine learning",
+      "instructor": "Robert jr",
+      "duration": "90",
+      "id": 10
+    },
+    {
+      "titl": "Intro to machine learning",
+      "instructor": "Robert jr",
+      "duration": "90",
+      "id": 11
+    },
+    {
+      "titl": "Intro to machine learning",
+      "instructor": "Robert jr",
+      "duration": "90",
+      "id": 12
+    }
+  ]
+}

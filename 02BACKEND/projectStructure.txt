@@ -1,0 +1,11 @@
+We have to create a project structur 
+
+for that we have to follow MVC pattern 
+
+M--> M stand for model (model means it is purely based
+on database interaction
+)
+
+V--> V stands for view (which is front end which we will keep separate)
+
+C--> C stands for CONTROLLER (this is business logic)
