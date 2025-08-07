@@ -1,0 +1,1 @@
+//install husky to run any task before commit to check errors
