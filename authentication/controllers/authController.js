@@ -41,7 +41,7 @@ const logIn = async (req,res)=>{
 
         //compare password
         const isCorrectUser = await argon2.verify(dbUser.password,password);
-
+             
         if(isCorrectUser){
            const token=jwt.sign(
             {
@@ -132,7 +132,7 @@ const resetPassword=async (req,res)=>{
             },
             order:[["createdAt","DESC"]],
         })
-        
+
         if(!otpDetail) return res.status(404).json({msg:"no otp data found"});
         if(otp!=otpDetail.otp)return res.status(404).json({msg:"wrong or expired otp"});
 
