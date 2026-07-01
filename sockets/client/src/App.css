@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    font-family: Arial,sans-serif;
+    background: #f2f2f2;
+}
+
+.app{
+    width: 400px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.roomBox input{
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.roomBox button{
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.chatSection{
+    margin-top: 20px;
+}
+
+.roomId{
+    font-size: 12px;
+    color:gray;
+}
+
+.chatBox{
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    padding: 10px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    padding: 8px 12px;
+    margin: 6px 0px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+.myMsg{
+    background: #c8e6c9;
+    align-self: flex-end;
+}
+
+.otherMsg{
+    background: #e3f2fd;
+    align-self: flex-start;
+}
+
+.msgForm{
+    display: flex;
+    margin-top: 10px;
+}
+
+.msgForm input{
+    flex: 1;
+    padding: 10px;
+}
+
+.msgForm button{
+    padding: 10px 15px;
+    cursor:pointer;
+}

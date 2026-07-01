@@ -5,6 +5,8 @@ const{getPhotos,createPhotos}=require("../controllers/userController");
 const{authMiddleware}=require("../middlewares/authMiddleware");
 const {forgetPassword,resetPassword}=require("../controllers/authController");
 const rateLimit=require("../middlewares/rateLimiterMiddleware")
+
+
 router.post("/signup",signUp);
 router.post("/login",logIn);
 router.post("/forget-password",forgetPassword);

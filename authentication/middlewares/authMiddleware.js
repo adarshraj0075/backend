@@ -9,6 +9,10 @@ const authMiddleware=(req,res,next)=>{
     const token=req.headers["authorization"];
     console.log("token recived",token);
 
+    if(!token){
+        return res.status(401).json({msg:"Unauthorized acess"});
+    }
+
     try {
         const decode=jwt.verify(token,JWT_PASSWORD);
         console.log("decoded",decode);

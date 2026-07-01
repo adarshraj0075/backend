@@ -41,6 +41,7 @@ const logIn = async (req,res)=>{
 
         //compare password
         const isCorrectUser = await argon2.verify(dbUser.password,password);
+       // console.log("this returns :",isCorrectUser) true or false
              
         if(isCorrectUser){
            const token=jwt.sign(
@@ -50,12 +51,27 @@ const logIn = async (req,res)=>{
             },
             jwt_password,
             {
-                expiresIn:"7d",
+                expiresIn:"5min",
             }
            )
-           return res.json({token});
+
+           const refreshToken=jwt.sign(
+            {
+                for:"refresh",
+            },
+            jwt_password,
+            {
+                expiresIn:"28d",
+            }
+           )
+
+           return res.json({
+            token,
+            refreshToken,
+            });
+
         }else{
-            return res.status(401).json({msg:"invalid password"});
+            return res.status(401).json({msg:"invalid credential"});
         }
 
     } catch (error) {
